@@ -1,0 +1,375 @@
+/*------Fonts-----------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/*--------Variables-------------*/
+:root {
+  --bg-color: #c1bbc2;
+  --card-bg: #edeaea;
+  --card-block-bg: #4e4e4e;
+  --img-bg-color: #807c7c;
+  --color-black: #000000;
+  --stroke-color: #b4b4b4;
+  --bg-glass: #f3f0f0;
+}
+
+/*------------Global style------------*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  background-attachment: fixed;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--color-black);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  padding: 35px 15px;
+}
+
+/*---main section----*/
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+/*----side card------*/
+.section1 {
+  position: relative;
+  background-color: var(--card-bg);
+  width: 20%;
+  height: 60%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.card1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* height: 70vh; */
+  background-color: var(--card-bg);
+  box-shadow: 4px 4px 4px 4px #6e6969;
+  border-radius: 30px 30px 0px 0px;
+  padding: 0;
+}
+
+.card-content {
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.img-box {
+  background-color: var(--card-bg);
+  align-items: center;
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+.img-box img {
+  max-width: 100%;
+  vertical-align: middle;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  border: 5px solid var(--card-block-bg);
+}
+
+h2,
+h3 {
+  text-transform: capitalize;
+  margin: 5px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+.social-icons {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 30px;
+  color: var(--color-black);
+  border-radius: 50%;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(2.5);
+  /* color: var(--card-bg);
+  background-color: var(--color-black); */
+}
+
+.download-container {
+  position: relative;
+  display: flex;
+  background-color: var(--card-block-bg);
+  width: auto;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+  user-select: none;
+}
+
+.btn {
+  line-height: 1;
+  background-color: var(--card-bg);
+  border: 1px solid var(--color-black);
+  padding: 10px 28px;
+  display: inline-block;
+  border-radius: 30px;
+  color: var(--color-black);
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+.btn:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+}
+
+/*----main card----*/
+
+.section2 {
+  position: relative;
+  background-color: var(--card-bg);
+  width: 60%;
+  height: 100%;
+  box-shadow: 4px 4px 4px 4px #6e6969;
+  border-radius: 30px;
+  padding: 30px;
+}
+/*------block 1-----*/
+h1 {
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+hr {
+  margin: 0 40px;
+}
+
+.section-block {
+  padding: 30px 50px 30px;
+}
+
+p {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.share-icon {
+  margin-right: 10px;
+}
+
+/*------block 2--------*/
+.details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.section-block h3 {
+  text-decoration: underline;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  width: 60%;
+  text-align: left;
+}
+
+.timeline-item .date {
+  display: block;
+  color: var(--card-block-bg);
+  font-weight: 400;
+  margin: 0 0 5px;
+}
+
+.timeline-item h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 0 10px;
+}
+
+.timeline-item h4 span {
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+.certification {
+  display: inline;
+  margin-left: 30px;
+}
+
+/*------Skill section------*/
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  color: var(--color-black);
+  font-size: 15px;
+  font-weight: 600;
+
+  /* justify-content: space-between; */
+}
+.skill-element img {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+
+/*-----Project Section-----*/
+.project-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.project-name {
+  width: 40%;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.btn-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1 {
+    margin-bottom: 50px;
+    width: 40%;
+  }
+  .card1 {
+    position: relative;
+    height: auto;
+  }
+
+  .section2 {
+    width: 80%;
+  }
+  .section-block {
+    padding: 20px 0px 0px;
+    /* text-align:; */
+  }
+}
+
+@media (max-width: 767px) {
+  .section1 {
+    width: 50%;
+  }
+
+  .timeline {
+    width: 100%;
+  }
+  .details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .certification {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  /* .skills {
+    justify-content: space-evenly;
+  } */
+
+  .btn-container {
+    height: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .section1 {
+    width: 60%;
+  }
+
+  /* .social-icons {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  } */
+  /* .download-container {
+    margin-top: 20 px;
+  } */
+
+  .skills {
+    justify-content: space-evenly;
+  }
+
+  .project-item {
+    display: block;
+    justify-content: space-between;
+  }
+  .btn-container {
+    width: 100%;
+  }
+  .btn-container .btn {
+    width: 80%;
+    padding: 5px;
+    text-align: center;
+  }
+}
